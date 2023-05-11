@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+@keyframes slideRight {
+  0%{
+    transform: translateX(-100%)
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
+
+@keyframes slideLeft {
+  0%{
+    transform: translateX(100%)
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
+
+body, html {
+  background-color: aliceblue;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.comment-banner{
+  background-image: url("https://muthumbinick.com/wp-content/themes/neptune-by-osetin/assets/img/patterns/flowers_light.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.submit-banner{
+  background-image: url("https://muthumbinick.com/wp-content/uploads/2015/09/pattern_01-500x500-1.png");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
