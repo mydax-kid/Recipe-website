@@ -1,13 +1,13 @@
 import Header from '../components/Head'
-//
-import Hero2 from '../components/Hero2'
+import Hero3 from '../components/Hero3'
 import Main from '../components/Main'
 
 const Home = () => {
+  
   return (
-   <div className= 'max-w-[1400px] mx-auto '>
+   <div className= 'max-w-[1400px] mx-auto'>
     <Header />
-    <Hero2 />
+    <Hero3/>
     <Main />
    </div>
   )

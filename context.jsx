@@ -1,4 +1,5 @@
 import { useContext, createContext, useState } from 'react'
+import {recipes} from './recipes.js'
 
 const Appcontext = createContext()
 
@@ -14,8 +15,10 @@ const Appprovider = ({ children }) => {
      console.log('hello')
    }
 
+  const categories = recipes.map(recipe => recipe.category)
+
   return (
-    <Appcontext.Provider value={ {search, setSearch, searchBar} }>
+    <Appcontext.Provider value={ {search, setSearch, searchBar, categories, recipes} }>
       {children}
     </Appcontext.Provider>
   )

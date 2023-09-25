@@ -46,7 +46,8 @@ const Hero2 = () => {
         <div className= 'absolute bottom-[10px] left-0 right-0 text-center space-x-[10px]'>
           {
             images.map((each, idx) => {
-              return ( <span 
+              return ( <span
+                       key={idx}
                        onClick= {() => changeSlide(idx)} 
                        className= { idx === index 
                                                 ? 'inline-block h-[20px] w-[15px] border rounded-full cursor-pointer'

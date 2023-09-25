@@ -3,7 +3,7 @@ import Sidemenu from './Sidemenu'
 
 const Main = () => {
   return(
-    <div className= 'p-6 px-4 py-12 flex bg-white'>
+    <div className= 'main-grid p-6 px-2 md:px-4 py-12 bg-white'>
       <Menulist/>
       <Sidemenu/>
     </div>
