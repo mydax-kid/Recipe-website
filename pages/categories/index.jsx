@@ -25,11 +25,11 @@ const Categories = () => {
     <div className= 'max-w-[1400px] mx-auto'>
       <Header/>
       <div className= 'bg-white p-2 sm:p-4 md:p-6 lg:p-12 mt-3'>
-        <h1>Home > Categories</h1>
+        <h1>{`Home > Categories`}</h1>
         <div className= 'grid-custom gap-[30px] my-4 md:my-6 lg:my-12'>
           {
             recipe.map((each, index) => (
-              <Link href= { `/categories/${each.category}` }>
+              <Link key={index} href= { `/categories/${each.category}` }>
                 <div key= {index} className= 'relative w-full h-full overflow-hidden cursor-pointer'>
                     <img 
                       src= {each.image}

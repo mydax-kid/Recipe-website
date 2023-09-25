@@ -15,7 +15,7 @@ const Hero = () => {
   useEffect(() => {
    let el = document.getElementsByTagName("img")
    setElement(el)
-  })
+  },[])
 
   const slideLeft = () => {
     let slideDistance;
@@ -52,9 +52,9 @@ const Hero = () => {
   return (
     <div className= 'max-h-[550px] flex overflow-x-hidden py-3'>
           {
-            images.map(each => {
+            images.map((each, index) => {
               return (
-                <div className= 'min-w-full'>
+                <div key={index} className= 'min-w-full'>
                   <img 
                     src= {each}
                     alt = '' 

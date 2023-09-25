@@ -25,7 +25,7 @@ const Singlepage = () => {
   return (
       <div className= 'relative z-10 max-w-[1400px] mx-auto bg-white'>
         <Header />
-        <h1 className= 'p-6 md:p-12 border-y text-2xl'>HOME > BEEF > {recipe?.title}</h1>
+        <h1 className= 'p-6 md:p-12 border-y text-2xl'>{`HOME > BEEF > ${recipe?.title}`}</h1>
         <div className= 'flex flex-col lg:flex-row' >
         <div className= 'p-2 md:p-8 lg:p-10 w-full lg:w-[50%] border-y'>
             <div className= 'h-[250px] md:h-[500px]'>
@@ -59,7 +59,7 @@ const Singlepage = () => {
               <p>CUISINE: {recipe?.specifics?.cuisineOrigin}</p>
             </div>
             <p className= 'py-20 text-center text-4xl '>
-              <i>"{recipe?.description}"</i>
+              <i>{`"${recipe?.description}"`}</i>
             </p>
             <div className= 'flex justify-center gap-2 md:gap-8 text-xl font-medium bg-sky-100 p-2 md:p-4 rounded-md'>
               <p className= 'p-3 text-center'>140mins</p>

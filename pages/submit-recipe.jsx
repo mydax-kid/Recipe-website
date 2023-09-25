@@ -5,7 +5,7 @@ const Submitrecipe = () => {
     <div className= 'relative bg-white max-w-[1400px] mx-auto border-t md:p-4 lg:p-8 z-10'>
       <Header />
       <div className= 'p-3'>
-        <h1>HOME > SUBMIT-RECIPE</h1>
+        <h1>{`HOME > SUBMIT-RECIPE`}</h1>
       </div>
       <div className= 'h-[90px] md:h-[180px] submit-banner flex items-center '>
         <h1 className= 'p-2 bg-white rounded-sm font-bold inline-block ml-6'>Submit recipe</h1>
@@ -27,7 +27,7 @@ const Submitrecipe = () => {
             <input type='password' required  className= 'w-full rounded-sm border my-2 p-1 outline-none'  />
             <br></br>
             <input type="checkbox" id="remember" className= 'mr-4 my-2'/ >
-            <label for="remember">Remember me</label>
+            <label htmlFor="remember">Remember me</label>
             <br></br>
             <div className= 'py-3 flex justify-around items-end'>
               <button className= 'border px-4 rounded-sm py-1 bg-green-100 border-black hover:bg-green-300'>Login</button>
